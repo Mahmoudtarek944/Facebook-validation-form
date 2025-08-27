@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* To Can Inherit From Any Element */
+  font-family: Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --face-color: rgb(39, 119, 242);
+}
+body {
+  background-color: rgba(233, 229, 229, 0.816);
+}
+.content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5em;
+}
+.det-acc {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  box-shadow: 0 0 1em gray;
+  background-color: white;
+}
+.det-acc h1 {
+  background-color: var(--face-color);
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 0.4em 0em;
+}
+.form-acc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2em 1.5em;
+  gap: 1em;
+}
+.left-acc,
+.right-acc {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+/* Best From Tack All Class and give them display flex */
+label {
+  display: block;
+  color: var(--face-color);
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+input:not(#male, #female) {
+  padding: 0.5em 4em 0.5em 0.7em;
+  width: 100%;
+  border: solid rgb(218, 214, 214) 0.05em;
+  border-radius: 0.3em;
+}
+input:not(#male, #female):focus {
+  border: solid rgb(138, 185, 255) 0.2em;
+}
+input::placeholder {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.gend .male-famale {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+.gend .male-famale label {
+  color: gray;
+  font-weight: bold;
+  display: inline;
+}
+.bi-date input {
+  color: var(--face-color);
+  font-weight: bold;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 0.6em;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  justify-content: flex-start;
+  margin-left: 3em;
+}
+.buttons button {
+  background-color: var(--face-color);
+  color: white;
+  border-radius: 0.4em;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+}
+@media screen and (max-width: 350px) {
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content {
+    /* flex-direction: column;
+    justify-content: center; */
+    margin-top: 0;
+    width: 100%;
+    padding: 3em;
+  }
+  .det-acc {
+    width: 100%;
+  }
+  .form-acc {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 2em;
+  }
+  .left-acc div,
+  .right-acc div {
+    width: 100%;
+  }
+}

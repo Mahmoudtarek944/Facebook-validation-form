@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Facebook</title>
+    <meta name="description" content="Information about Mahmoud" />
+    <!--To Media Quaries  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- To CSS -->
+    <link rel="stylesheet" href="style/face.css" />
+    <!-- To Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <body>
+      <div class="Login-page">
+        <div class="left-login">
+          <h1>Facebook</h1>
+          <p>Connect with frinds and the world around you on Facebook</p>
+        </div>
+        <div class="right-login">
+          <div class="right-top-login">
+            <h3 class="invaid-email-pass" id="invalidEmailPassword">Invalid User Name Or Password</h3>
+            <form action="welcomeFaceBook.html"
+            onsubmit="return checkValidation()"
+            >
+              <input
+                type="text"
+                placeholder="Email address or Phone number"
+                id="emailInput"
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                id="passwordInput"
+                onfocus="focusPassword()"
+                onblur="bluePassword()"
+                onkeyup="lengthPassword()"
+              />
+              <div class="ch-box">
+                <input type="checkbox" name="show-pass" id="showPass" onclick="showUserPassword()"/>
+                <label for="showPass" onclick="showUserPassword()" >Show Password</label>
+              </div>
+              <h5 class="line-show-pass" id="lineShow">
+                <i class="fa-solid fa-xmark"></i>
+                Password should be more than 8 characters
+              </h6>
+              <button class="Log-in">Log In</button>
+            </form>
+            <a href="">Forget Password?</a>
+            <hr />
+            <div class="div-creat-acc">
+              <a href="sign-up.html">
+                <button class="creat-acc">Creat New Account</button>
+              </a>
+            </div>
+          </div>
+          <div class="right-bottom-login">
+            <p>
+              <a href="">Creat a Page</a> for a celebrity, brand or business.
+            </p>
+          </div>
+        </div>
+      </div>
+      <script src="script/face.js"></script>
+    </body>
+  </head>
+</html>

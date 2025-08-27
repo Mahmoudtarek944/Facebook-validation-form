@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* To Can Inherit From Any Element */
+  font-family: Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --face-color: rgb(39, 119, 242);
+}
+body {
+  background-color: rgba(233, 229, 229, 0.816);
+}
+.Login-page {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /* We Give Height To abel to align-items*/
+  height: 100vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.left-login {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: -2em;
+}
+.left-login h1 {
+  font-size: 3.4em;
+  color: var(--face-color);
+}
+.left-login p {
+  font-size: 1.8em;
+  color: rgb(112, 111, 111);
+}
+.right-login {
+  width: 31%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 2em;
+}
+.right-top-login {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: white;
+  box-shadow: 0 0 1em rgb(157, 155, 155);
+  padding: 2.5em 2em;
+  border-radius: 0.4em;
+}
+.invaid-email-pass {
+  color: red;
+  text-align: center;
+  display: none;
+}
+.right-top-login form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.right-top-login form input {
+  padding: 1.2em 1em;
+  border-radius: 0.5em;
+  border: solid rgba(128, 128, 128, 0.49) 0.05em;
+}
+.right-top-login .ch-box input {
+  cursor: pointer;
+}
+.right-top-login .ch-box label {
+  color: var(--face-color);
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+.right-top-login .Log-in {
+  background-color: var(--face-color);
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  border: none;
+  padding: 0.7em 0.5em;
+  border-radius: 0.4em;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+}
+.right-top-login .Log-in:hover {
+  background-color: rgb(31, 98, 200);
+}
+.line-show-pass {
+  color: red;
+  display: none;
+  /* visibility: hidden;  remind place for this class */
+}
+.right-top-login a {
+  text-align: center;
+  color: var(--face-color);
+  font-weight: 100;
+}
+.right-top-login a:hover {
+  text-decoration: solid var(--face-color) underline;
+}
+.div-creat-acc {
+  text-align: center;
+}
+.right-top-login .creat-acc {
+  margin-top: 0.7em;
+  background-color: rgb(68, 175, 46);
+  color: white;
+  border: none;
+  border-radius: 0.5em;
+  padding: 0.8em 1.3em;
+  font-size: 1em;
+  font-weight: bold;
+}
+.right-top-login .creat-acc:hover {
+  background-color: rgb(49, 130, 33);
+}
+.right-bottom-login {
+  text-align: center;
+  cursor: default;
+}
+.right-bottom-login p {
+  color: rgb(105, 102, 102);
+  font-size: 0.9em;
+}
+.right-bottom-login a {
+  color: var(--face-color);
+  font-weight: bold;
+}
+.right-bottom-login a:hover {
+  text-decoration: solid var(--face-color) underline;
+}
+@media screen and (max-width: 375px) {
+  .left-login h1 {
+    justify-content: center;
+    font-size: 2.2em;
+  }
+}
+@media screen and (max-width: 989px) {
+  .Login-page {
+    flex-direction: column;
+    gap: 2em;
+    text-align: center;
+    font-size: 0.7em;
+    margin-top: 2.4em;
+  }
+  .left-login {
+    text-align: center;
+    width: 60%;
+  }
+  .right-login {
+    width: 50%;
+  }
+}

@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* To Can Inherit From Any Element */
+  font-family: Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+:root {
+  --face-color: rgb(39, 119, 242);
+}
+body {
+  background-color: rgba(233, 229, 229, 0.816);
+}
+.page-weclome {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+}
+.page-weclome h1 {
+  font-size: 3rem;
+  margin-top: 1em;
+}
+.icon-facebook i {
+  width: 100%;
+  font-size: 4.5em;
+  color: var(--face-color);
+}
+@media screen and (max-width: 500px) {
+  .page-weclome h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .page-weclome h1 {
+    font-size: 1.5rem;
+  }
+}

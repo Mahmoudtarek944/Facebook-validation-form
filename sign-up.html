@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign-up-Facebook</title>
+    <meta name="description" content="Information about Mahmoud" />
+    <!--To Media Quaries  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- To CSS -->
+    <link rel="stylesheet" href="style/sign-up.css" />
+    <!-- To Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <body>
+      <div class="content">
+        <div class="det-acc">
+          <h1>Creat Account</h1>
+          <form action="face.html" onsubmit="return checkValidationForm()">
+            <div class="form-acc">
+              <div class="left-acc">
+                <div class="f-name">
+                  <label for="firstNameInput" id="firstName">
+                    First Name :
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Enter Your First Name"
+                    id="firstNameInput"
+                    title="The First's First Char Name Should Be Capital Letter"
+                  />
+                </div>
+                <div class="mail">
+                  <label for="emailNameInput" id="emailName">Email :</label>
+                  <input
+                    type="text"
+                    placeholder="Enter Your Password"
+                    id="emailNameInput"
+                  />
+                </div>
+                <div class="pass">
+                  <label for="passwordNameInput" id="passwordName"
+                    >Password :</label
+                  >
+                  <input
+                    type="password"
+                    placeholder="Enter Your Password"
+                    id="passwordNameInput"
+                  />
+                </div>
+                <div class="gend">
+                  <label id="genderchose">Gender :</label>
+                  <div class="male-famale">
+                    <div class="male">
+                      <input
+                        type="radio"
+                        name="gender"
+                        id="male"
+                        class="gender"
+                      />
+                      <label for="male">Male</label>
+                    </div>
+                    <div class="female">
+                      <input
+                        type="radio"
+                        name="gender"
+                        id="female"
+                        class="gender"
+                      />
+                      <label for="female">Female</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="right-acc">
+                <div class="l-name">
+                  <label for="lastNameInput" id="lastName"> Last Name : </label>
+                  <input
+                    type="text"
+                    placeholder="Enter Your Last Name"
+                    id="lastNameInput"
+                    title="The Last's First Char Name Should Be Capital Letter"
+                  />
+                </div>
+                <div class="ph">
+                  <label for="phoneInput" id="phone">Phone Number :</label>
+                  <input
+                    type="text"
+                    placeholder="Enter Your Phone Number"
+                    id="phoneInput"
+                  />
+                </div>
+                <div class="conf-pass">
+                  <label for="confirmPasswordNameInput" id="confirmPasswordName"
+                    >Confirm Password :</label
+                  >
+                  <input
+                    type="password"
+                    placeholder="Confirm Your Password"
+                    id="confirmPasswordNameInput"
+                  />
+                </div>
+                <div class="bi-date">
+                  <label id="data">Birthdate :</label>
+                  <input type="date" id="dataInput" />
+                </div>
+              </div>
+            </div>
+            <div class="buttons">
+              <button type="reset" class="butt-left">Reset</button>
+              <button>Register</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <script src="script/signUp.js"></script>
+    </body>
+  </head>
+</html>
