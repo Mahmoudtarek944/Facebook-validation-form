@@ -27,12 +27,13 @@ var dateUser = document.getElementById("data");
 var dateUserInput = document.getElementById("dataInput");
 
 function toValidateUpperCaseForFirstNameAndLastName(name) {
-  // invalid system becuase if the user enter first name is (111) the first number is not uppcase or not lowercase to convert
+  // invalid system becuase if the user enter first name is (111) the first number is not uppcase or not lowercase to convert :
   //   var firstCharForFirstNameInput = firstUserNameInput.value[0].toUpperCase();
   //   if (
   //     firstUserNameInput.value.length < 3 ||
   //     firstUserNameInput.value[0] !== firstCharForFirstNameInput
   //   ) {
+
   if (name.charCodeAt(0) >= 65 && name.charCodeAt(0) <= 90) {
     return true;
   } else {

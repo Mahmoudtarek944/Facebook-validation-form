@@ -39,18 +39,30 @@ body {
 }
 .form-acc {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 2em 1.5em;
+  flex-direction: column;
+  padding: 2em 2em;
   gap: 1em;
 }
-.left-acc,
-.right-acc {
+.name-user,
+.user-email-phone,
+.user-pass-confpass,
+.user-gernder-date {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 1.2em;
+  flex-direction: row;
+  gap: 2em;
 }
-
+.name-user div,
+.user-email-phone div,
+.user-pass-confpass div {
+  width: 45%;
+}
+.user-gernder-date {
+  justify-content: space-between;
+}
+.user-gernder-date .bi-date {
+  margin-right: 4.5em;
+}
 /* Best From Tack All Class and give them display flex */
 label {
   display: block;
@@ -60,9 +72,9 @@ label {
 }
 input:not(#male, #female) {
   padding: 0.5em 4em 0.5em 0.7em;
-  width: 100%;
   border: solid rgb(218, 214, 214) 0.05em;
   border-radius: 0.3em;
+  width: 100%;
 }
 input:not(#male, #female):focus {
   border: solid rgb(138, 185, 255) 0.2em;
@@ -103,6 +115,16 @@ input::placeholder {
   cursor: pointer;
 }
 @media screen and (max-width: 350px) {
+  input::placeholder {
+    font-weight: bold;
+    font-size: 0.7em;
+  }
+  input:not(#male, #female) {
+    padding: 0.5em 0em 0.5em 0.7em;
+    border: solid rgb(218, 214, 214) 0.05em;
+    border-radius: 0.3em;
+    width: 100%;
+  }
   .buttons {
     flex-direction: column;
     align-items: center;
@@ -126,8 +148,15 @@ input::placeholder {
     align-items: stretch;
     padding: 2em;
   }
-  .left-acc div,
-  .right-acc div {
+  .name-user,
+  .user-email-phone,
+  .user-pass-confpass,
+  .user-gernder-date {
+    flex-direction: column;
+  }
+  .name-user div,
+  .user-email-phone div,
+  .user-pass-confpass div {
     width: 100%;
   }
 }
