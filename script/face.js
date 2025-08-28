@@ -34,6 +34,9 @@ function bluePassword() {
 function lengthPassword() {
   if (userPassword.value.length < 8) {
     linerShowPassword.style.display = "block";
+    linerShowPassword.innerHTML =
+      '<i class="fa-solid fa-xmark"></i>  Password should be more than 8 characters ';
+    linerShowPassword.style.color = "red";
   } else {
     linerShowPassword.innerHTML =
       '<i class="fa-solid fa-check"></i> Password Length Is Valid';
